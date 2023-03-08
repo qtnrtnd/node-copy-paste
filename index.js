@@ -30,9 +30,9 @@ switch(process.platform) {
 	case "freebsd":
 		config = require("./platform/linux");
 		break;
-	case "openbsd":
-		config = require("./platform/openbsd");
-		break;
+	// case "openbsd":
+	// 	config = require("./platform/openbsd");
+	// 	break;
 	default:
 		throw new Error("Unknown platform: '" + process.platform + "'.  Send this error to xavi.rmz@gmail.com.");
 }
